@@ -29,7 +29,6 @@
     "cookie-parser": "~1.3.3",
     "morgan": "~1.3.0",
     "moment": "2.10.6",
-    "mongoWrapper": "git+http://211.8.80.214/gitbucket/git/F/mongoWrapper.git#0.3.3",
     "mongodb": "2.1.11",
     "nodemon": "1.8.0",
     "q": "1.4.1",
