@@ -89,7 +89,7 @@ $ ->
             .then (result) =>
               if result
                 if result.thumbnail
-                  imagePath = "/images/#{val.thumbnail}/200x200"
+                  imagePath = "/images/#{result.thumbnail}/200x200"
                 else
                   imagePath = "/images/noimage.png"
 

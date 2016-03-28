@@ -6,6 +6,12 @@ block style
 
 block content
 
+block footer
+  button.shooting.btn.btn-success.fileinput-button
+    input#upload(type="file", name="file", data-url="./upload/image")
+    span.glyphicon.glyphicon-camera
+    span.text="撮影する"
+ 
 block script
   script(src="//cdn.jsdelivr.net/jquery.fileupload/9.5.2/js/vendor/jquery.ui.widget.js")
   script(src="//cdn.jsdelivr.net/jquery.fileupload/9.5.2/js/jquery.fileupload.js")

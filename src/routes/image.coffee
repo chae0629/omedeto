@@ -4,15 +4,11 @@ fs = require "fs"
 
 # ファイル格納
 exports.upload = (req, res) ->
-  console.log "create"
   file = req.files.file
   filePath = file.path
   md5sum = crypto.createHash "md5"
   md5sum.update "#{filePath}"
   fileName = md5sum.digest "hex"
-
-  console.log filePath
-  console.log fileName
 
   mongo.writeFile 'img', fileName, filePath, (err, data) ->
     if err
@@ -27,7 +23,6 @@ exports.upload = (req, res) ->
 
 # ファイル取得
 exports.download = (req, res) ->
-  console.log "show"
   fileName = req.params.fileName
 
   #res.status 200
